@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        startNewRound()
+        startNewGame()
         updateLabels()
     }
 
@@ -62,11 +62,22 @@ class ViewController: UIViewController {
         currentValue = lroundf(slider.value)
     }
     
+    @IBAction func startOver(){
+        startNewGame()
+        updateLabels()
+    }
+    
     func startNewRound(){
         targetValue = 1 + Int(arc4random_uniform(100))
         currentValue = 1
         slider.value = Float(currentValue)
         round += 1
+    }
+    
+    func startNewGame(){
+        score = 0
+        round = 0
+        startNewRound()
     }
     
     func updateLabels(){
