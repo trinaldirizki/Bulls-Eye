@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		163D7BFF2056AF02000E0DFC /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163D7BFE2056AF02000E0DFC /* AboutViewController.swift */; };
 		16FA6AAC204EAC9F00A3367F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FA6AAB204EAC9F00A3367F /* AppDelegate.swift */; };
 		16FA6AAE204EAC9F00A3367F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FA6AAD204EAC9F00A3367F /* ViewController.swift */; };
 		16FA6AB1204EAC9F00A3367F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FA6AAF204EAC9F00A3367F /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		163D7BFE2056AF02000E0DFC /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		16FA6AA8204EAC9F00A3367F /* Bulls Eye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bulls Eye.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FA6AAB204EAC9F00A3367F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16FA6AAD204EAC9F00A3367F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				16FA6AAB204EAC9F00A3367F /* AppDelegate.swift */,
 				16FA6AAD204EAC9F00A3367F /* ViewController.swift */,
 				16FA6AAF204EAC9F00A3367F /* Main.storyboard */,
+				163D7BFE2056AF02000E0DFC /* AboutViewController.swift */,
 				16FA6AB2204EAC9F00A3367F /* Assets.xcassets */,
 				16FA6AB4204EAC9F00A3367F /* LaunchScreen.storyboard */,
 				16FA6AB7204EAC9F00A3367F /* Info.plist */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				163D7BFF2056AF02000E0DFC /* AboutViewController.swift in Sources */,
 				16FA6AAE204EAC9F00A3367F /* ViewController.swift in Sources */,
 				16FA6AAC204EAC9F00A3367F /* AppDelegate.swift in Sources */,
 			);
