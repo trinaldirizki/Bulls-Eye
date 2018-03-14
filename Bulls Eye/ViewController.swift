@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var currentValue: Int = 1
+    var currentValue: Int = 50
     var targetValue: Int = 0
     var score = 0
     var round = 0
@@ -25,6 +25,22 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         startNewGame()
         updateLabels()
+        
+        let thumbImageNormal = UIImage(named: "SliderThumb-Normal")!
+        slider.setThumbImage(thumbImageNormal, for: .normal)
+        
+        let thumbImageHighlighted = UIImage(named: "SliderThumb-Highlighted")!
+        slider.setThumbImage(thumbImageHighlighted, for: .highlighted)
+        
+        let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+        
+        let trackLeftImage = #imageLiteral(resourceName: "SliderTrackLeft")
+        let trackLeftResizable = trackLeftImage.resizableImage(withCapInsets: insets)
+        slider.setMinimumTrackImage(trackLeftResizable, for: .normal)
+        
+        let trackRightImage = #imageLiteral(resourceName: "SliderTrackRight")
+        let trackRightResizable = trackRightImage.resizableImage(withCapInsets: insets)
+        slider.setMaximumTrackImage(trackRightResizable, for: .normal)
     }
 
     override func didReceiveMemoryWarning() {
@@ -69,7 +85,7 @@ class ViewController: UIViewController {
     
     func startNewRound(){
         targetValue = 1 + Int(arc4random_uniform(100))
-        currentValue = 1
+        currentValue = 50
         slider.value = Float(currentValue)
         round += 1
     }
